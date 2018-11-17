@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+        <ImageView
+            android:id="@+id/sblogo"
+            android:layout_width="wrap_content"
+            android:layout_height="134dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sblogo" />
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/name_field1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name:"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/name_field2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number:"
+            android:inputType="textCapWords" />
+
+        <EditText
+            android:id="@+id/name_field3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Store Pick - Up:"
+            android:inputType="textCapWords" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            <RadioButton android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:onClick="onRadioButtonClicked"
+                android:layout_marginBottom="16dp"/>
+            <RadioButton android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credid/Debit Card"
+                android:onClick="onRadioButtonClicked"/>
+
+</ScrollView>
